@@ -1,5 +1,5 @@
 import './App.css'
-import {Routes, Route, Link} from "react-router-dom"
+import {Routes, Route} from "react-router-dom"
 import Home from "./pages/Home"
 import Detail from "./pages/Detail"
 import Notfound from './pages/Notfound'
@@ -9,13 +9,13 @@ import Notfound from './pages/Notfound'
 function App() {
 
   return (
-    <>
+    <div className="App">
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/detail" element={<Detail/>}/>
         <Route path="*" element={<Notfound/>}/>
       </Routes>
-    </>
+    </div>
   )
 }
 
