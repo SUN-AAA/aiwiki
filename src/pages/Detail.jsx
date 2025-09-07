@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { useLocation } from "react-router-dom";
+import Header from "../components/Header";
 import "../styles/Detail.css"
 
 function Detail() {
@@ -8,12 +9,14 @@ function Detail() {
 
   return (
     <div className="Detail">
-      <h1>{tool.name}</h1>
-      <p>{tool.content}</p>
-      <a href={tool.link} target="_blank" rel="noopener noreferrer">Go to Homepage</a>
-      <div className="link">
-        <Link to={"/"}>Home</Link>
-      </div>
+        <Header/>
+        <hr></hr>
+        <h1>{tool.name}</h1>
+        <p>{tool.content}</p>
+        <a href={tool.link} target="_blank" rel="noopener noreferrer">Go to Homepage</a>
+        <div className="link">
+            <Link to={"/"}>Home</Link>
+        </div>
     </div>
   );
 }

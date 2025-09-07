@@ -4,9 +4,16 @@
     align-items: center;
 }
 
+.Detail > hr {
+    width: 100%
+}
+
 .link {
     position: absolute;
-    top: 40px;
-    left: 30px; 
-    color:black;
+    top: 48px;
+    right: 100px; 
+    background-color: gray;
+    color:white;
+    border-radius: 5px;
+    padding: 5px;
 }
