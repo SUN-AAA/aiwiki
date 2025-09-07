@@ -1,13 +1,14 @@
 .Header {
     position: relative;
     align-items: center;
-    padding: 60px 0;
+    padding: 55px 0;
+    background-color: rgb(237, 237, 237);
 }
 
 .Header > h1 {
     position: absolute;
     left: 50%;
-    top: 20px;
+    top: 30px;
     transform: translateX(-50%);
     margin: 0;
 }
@@ -16,4 +17,16 @@
     position: absolute;
     top: 30px;
     right: 30px; 
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.Header > img {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
 }
