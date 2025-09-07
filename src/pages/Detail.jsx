@@ -10,10 +10,15 @@ function Detail() {
   return (
     <div className="Detail">
         <Header/>
-        <hr></hr>
+        <hr/>
+        
         <h1>{tool.name}</h1>
-        <p>{tool.content}</p>
-        <a href={tool.link} target="_blank" rel="noopener noreferrer">Go to Homepage</a>
+        <p>요금제 : {tool.price}</p>
+        <p>카테고리 : {tool.category}</p>
+        <p>사용 플랫폼 : {tool.platform}</p>
+        <a href={tool.link} target="_blank" rel="noopener noreferrer">홈페이지 방문</a>
+        <p className="content">상세 설명 <br/> {tool.content}</p>
+        
         <div className="link">
             <Link to={"/"}>Home</Link>
         </div>
