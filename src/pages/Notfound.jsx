@@ -1,7 +1,7 @@
 const Notfound = () => {
     return(
         <div>
-            <h1>죄송 ^..^ 잘못된 페이지</h1>
+            <h1>404 NOT FOUND</h1>
         </div>
     )
 }

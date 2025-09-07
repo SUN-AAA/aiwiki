@@ -28,7 +28,7 @@ const List = () => {
                     <p>{tool.content}</p>
                     <div className="button">
                         <a href={tool.link} target="_blank" rel="noopener noreferrer">Go to Homepage</a>
-                        <Link to={"/detail"} className="Detail">Detail</Link>
+                        <Link to={"/detail"} className="Detail" state={{tool}}>Detail</Link>
                     </div>
                 </div>
             ))}
