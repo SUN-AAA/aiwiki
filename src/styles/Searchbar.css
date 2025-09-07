@@ -1,0 +1,14 @@
+.Searchbar {
+    display: flex;
+    gap: 10px;
+}
+
+.Searchbar > input {
+    flex: 1;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+.Searchbar > button {
+    cursor: pointer;
+}

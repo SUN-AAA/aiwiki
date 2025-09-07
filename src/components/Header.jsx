@@ -7,7 +7,6 @@ const Header = () => {
             <h1>AI Wiki</h1>
             <img src="aiwikilogo.png"></img>
             <a href="https://github.com/SUN-AAA/aiwiki">GitHub</a>
-            
         </div>
     )
 }
