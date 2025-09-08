@@ -1,5 +1,7 @@
 import "../styles/List.css"
 import {Link} from "react-router-dom"
+import { useState } from "react"
+import getFilteredData from "../utils/getFilteredData"
 
 const List = () => {
     const tools = [
@@ -29,9 +31,22 @@ const List = () => {
         },
     ]
 
+    const [search, setSearch] = useState("")
+    
+    const onChangeSearch = (e) => {
+        setSearch(e.target.value)
+    }
+
+    const filteredtool = getFilteredData({search, tools})
+
     return (
         <div className="List">
-            {tools.map((tool, index) => (
+            <div className="Searchbar">
+                <input value={search} onChange={onChangeSearch} placeholder="검색어를 입력하세요"></input>
+                <button>검색</button>
+            </div>
+
+            {filteredtool.map((tool, index) => (
                 <div key={index} className="tool-item">
                     <h2>{tool.name}</h2>
 
