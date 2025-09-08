@@ -3,7 +3,7 @@ const getFilteredData = ({search, tools}) => {
         return tools;
     }
     return tools.filter((tool) => 
-        tool.name.toLowerCase().includes(search.toLowerCase())
+        tool.content.toLowerCase().includes(search.toLowerCase())
     )
 }
 
