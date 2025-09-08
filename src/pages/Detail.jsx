@@ -3,13 +3,16 @@ import { useLocation } from "react-router-dom";
 import Header from "../components/Header";
 import "../styles/Detail.css"
 
-function Detail() {
+const Detail = () => {
   const location = useLocation();
   const { tool } = location.state;
 
   return (
     <div className="Detail">
         <Header/>
+        <div className="link">
+            <Link to={"/"}>Home</Link>
+        </div>
         <hr/>
         
         <h1>{tool.name}</h1>
@@ -19,9 +22,6 @@ function Detail() {
         <a href={tool.link} target="_blank" rel="noopener noreferrer">홈페이지 방문</a>
         <p className="content">상세 설명 <br/> {tool.content}</p>
         
-        <div className="link">
-            <Link to={"/"}>Home</Link>
-        </div>
     </div>
   );
 }
