@@ -16,7 +16,7 @@ const Tools = [
             link: "https://www.figma.com/ko-kr/ai/"
         },
         {
-            name: "Cursor",
+            name: "Cursor2",
             price: "부분 유료",
             category: "코딩",
             platform: "통합개발환경(IDE)",
