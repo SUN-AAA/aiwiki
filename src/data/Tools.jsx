@@ -104,20 +104,12 @@ const Tools = [
             link: "https://www.canva.com"
         },
         {
-            name: "Flair AI",
+            name: "Flair.ai",
             price: "부분 유료",
             category: "브랜딩, 패션 디자인",
             platform: "웹",
             content: "Flair AI : 브랜드 비주얼 제작에 특화된 AI 디자인 플랫폼으로, 제품 이미지 생성, 패션 촬영 보정, 스타일링 프롬프트를 지원한다. 크리에이티브 콘텐츠를 위한 고품질 아트워크 제작에 활용된다.",
             link: "https://flair.ai"
-        },
-        {
-            name: "Booth AI",
-            price: "부분 유료",
-            category: "이미지 생성, 3D 시각화",
-            platform: "웹",
-            content: "Booth AI : 텍스트나 이미지를 기반으로 인물, 패션, 제품 이미지를 생성하는 비주얼 제작 도구이다. AI 기반 포토 리얼리스틱 렌더링 기능으로 상업용 콘텐츠 제작에 활용된다.",
-            link: "https://booth.ai"
         },
         {
             name: "Midjourney",
@@ -144,7 +136,7 @@ const Tools = [
             link: "https://leonardo.ai"
         },
         {
-            name: "Gamma AI",
+            name: "Gamma",
             price: "부분 유료",
             category: "프레젠테이션 제작",
             platform: "웹",
@@ -152,7 +144,7 @@ const Tools = [
             link: "https://gamma.app"
         },
         {
-            name: "Slide AI",
+            name: "Slides.ai",
             price: "부분 유료",
             category: "프레젠테이션 생성",
             platform: "웹",
@@ -176,12 +168,12 @@ const Tools = [
             link: "https://www.boomy.com"
         },
         {
-            name: "Amper AI",
+            name: "Amper",
             price: "부분 유료",
             category: "음악 생성, 사운드 디자인",
             platform: "웹",
             content: "Amper AI : 영상, 게임, 광고용 맞춤형 배경음악을 자동 생성하는 AI 플랫폼이다. 사용자는 분위기, 악기, 길이 등을 선택해 손쉽게 사운드를 제작할 수 있다.",
-            link: "https://www.ampermusic.com"
+            link: "https://www.amper-ai.com/"
         },
         {
             name: "Soundful",
@@ -208,36 +200,36 @@ const Tools = [
             link: "https://typecast.ai"
         },
         {
-            name: "클로바더빙",
+            name: "CLOVA Dubbing",
             price: "부분 유료",
             category: "음성 더빙",
             platform: "웹",
-            content: "클로바더빙 : 네이버 클라우드 기반 AI 음성 합성 서비스로, 영상에 자연스러운 음성을 입힌다. 감정 조절, 다국어 지원, 음색 선택 기능을 제공한다.",
+            content: "클로바더빙 (CLOVA Dubbing) : 네이버 클라우드 기반 AI 음성 합성 서비스로, 영상에 자연스러운 음성을 입힌다. 감정 조절, 다국어 지원, 음색 선택 기능을 제공한다.",
             link: "https://clovadubbing.naver.com"
         },
         {
-            name: "클로바노트",
+            name: "ClovaNote",
             price: "부분 유료",
             category: "음성 인식, 회의록 자동화",
             platform: "웹, iOS, Android",
-            content: "클로바노트 : 음성을 실시간으로 텍스트로 변환하고 요약하는 AI 기반 회의 기록 도구이다. 발화자 구분, 키워드 추출 기능을 제공하며, 회의나 수업 기록에 유용하다.",
+            content: "클로바노트 (ClovaNote) : 음성을 실시간으로 텍스트로 변환하고 요약하는 AI 기반 회의 기록 도구이다. 발화자 구분, 키워드 추출 기능을 제공하며, 회의나 수업 기록에 유용하다.",
             link: "https://clovanote.naver.com"
         },
         {
-            name: "다글로",
+            name: "daglo",
             price: "부분 유료",
             category: "자막 생성, 번역",
             platform: "웹",
-            content: "다글로 : 영상 음성을 자동 인식해 자막을 생성하고 번역까지 처리하는 AI 플랫폼이다. 유튜브 제작자와 강의 영상 편집자에게 유용하다.",
+            content: "다글로 (daglo): 영상 음성을 자동 인식해 자막을 생성하고 번역까지 처리하는 AI 플랫폼이다. 유튜브 제작자와 강의 영상 편집자에게 유용하다.",
             link: "https://www.daglo.ai"
         },
         {
-            name: "셀비노트",
+            name: "Selvas Note",
             price: "부분 유료",
             category: "음성 인식, 회의 기록",
             platform: "웹, 모바일",
-            content: "셀비노트 : 음성 인식 기술로 회의 내용을 자동 기록하고 요약하는 AI 플랫폼이다. 발화자 인식과 실시간 전사 기능을 제공한다.",
-            link: "https://selvynote.selvasai.com"
+            content: "셀비노트 (Selvas Note) : 음성 인식 기술로 회의 내용을 자동 기록하고 요약하는 AI 플랫폼이다. 발화자 인식과 실시간 전사 기능을 제공한다.",
+            link: "https://www.selvasai.com/note"
         },
         {
             name: "Copilot",
@@ -256,7 +248,7 @@ const Tools = [
             link: "https://gemini.google.com"
         },
         {
-            name: "Perplexity AI",
+            name: "Perplexity",
             price: "부분 유료",
             category: "AI 검색, 지식엔진",
             platform: "웹, iOS, Android",
@@ -296,7 +288,7 @@ const Tools = [
             link: "https://www.miricanvas.com"
         },
         {
-            name: "Napkin AI",
+            name: "Napkin",
             price: "부분 유료",
             category: "아이디어 정리, 요약",
             platform: "웹",
@@ -304,7 +296,7 @@ const Tools = [
             link: "https://www.napkin.ai"
         },
         {
-            name: "Suno AI",
+            name: "Suno",
             price: "부분 유료",
             category: "음악 생성",
             platform: "웹",
@@ -354,9 +346,9 @@ const Tools = [
         {
             name: "Genspark",
             price: "부분 유료",
-            category: "AI 기사 요약, 정보 검색",
+            category: "슬라이드 제작 및 시트 생성, 정보 검색",
             platform: "웹",
-            content: "Genspark : 사용자의 질문을 기사 형식으로 요약해 제공하는 AI 정보 플랫폼이다. 출처 기반의 핵심 요약을 제공한다.",
+            content: "Genspark : 주요 기능으로 스파크페이지, AI 슬라이드, AI 시트, AI 채팅, AI 드라이브가 있다. 사용자 요구에 따라 실시간으로 맞춤형 웹페이지를 생성하는 '스파크페이지'라는 기능을 내세우는데, 최근에는 슬라이드 및 시트 생성 기능으로 유명하다. 자체 AI 모델을 개발하지는 않고, GPT, Claude, Gemini 등 여러 모델을 동시에 활용하는 방식으로 'Mixture' 서비스를 제공하고 있다. ",
             link: "https://www.genspark.ai"
         },
         {
@@ -409,10 +401,10 @@ const Tools = [
         },
         {
             name: "뤼튼",
-            price: "부분 유료",
+            price: "무료",
             category: "글쓰기, 마케팅 콘텐츠",
             platform: "웹",
-            content: "뤼튼 : 한국어 기반 생성형 AI로, 블로그, SNS, 뉴스레터 콘텐츠를 자동 작성한다. 키워드 삽입, 톤 조절, SEO 최적화를 지원한다.",
+            content: "뤼튼 (wrtn) : GPT-5와 같은 다양한 생성형 인공지능들을 프로그램 내에서 무료로 사용할 수 있게 서비스를 구축하면서 주목받고 있다. ChatGPT와 같이 대화를 통해 결과물을 생성해내는 형태이지만 뤼튼은 보다 광범위한 콘텐츠 생성을 위해 데이터 소스에 대한 추가적인 전처리와 모델 구조의 특화가 이루어졌다. 대화뿐만 아니라 문서 요약, 소스 코드 작성, 이미지 생성, 기사 작성 등의 작업도 수행할 수 있는 텍스트 생성 도구에 초점을 맞추어 개발되었다. 뤼튼은 타사의 LLM의 api를 호출하여 시스템 프롬프트를 걸어 사용자에게 제공하는 방식이기 때문에, 최신 LLM을 이용하는데 다소 시간이 지체된다.",
             link: "https://wrtn.ai"
         },
         {
@@ -456,7 +448,7 @@ const Tools = [
             link: "https://www.notion.so/product/ai"
         },
         {
-            name: "Slack AI",
+            name: "Slack",
             price: "부분 유료",
             category: "팀 커뮤니케이션, 업무 자동화",
             platform: "웹, 데스크톱, 모바일",
@@ -485,7 +477,7 @@ const Tools = [
             category: "코드 생성, 개발 보조",
             platform: "웹, IDE",
             content: "Codestral : Mistral AI가 개발한 코드 전용 오픈소스 모델로, Python·C·JavaScript 등 주요 언어를 지원하며 코드 자동 완성과 디버깅을 제공한다.",
-            link: "https://mistral.ai"
+            link: "https://mistral.ai/news/codestral?utm_source=pytorchkr&ref=pytorchkr"
         },
         {
             name: "Mercury Coder",
@@ -496,7 +488,7 @@ const Tools = [
             link: "https://www.mercurycoder.com"
         },
         {
-            name: "Krea AI",
+            name: "Krea",
             price: "부분 유료",
             category: "이미지 생성, 비주얼 디자인",
             platform: "웹",
