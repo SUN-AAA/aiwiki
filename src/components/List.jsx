@@ -17,11 +17,17 @@ const List = () => {
         setResult(filteredtool)
     }
 
+    const onKeydown = (e) => {
+        if (e.keyCode === 13){
+            onClickSearch()
+        }
+    }
+
 
     return (
         <div className="List">
             <div className="Searchbar">
-                <input ref={searchRef} onChange={onChangeSearch} placeholder="검색어를 입력하세요"></input>
+                <input ref={searchRef} onKeyDown={onKeydown} onChange={onChangeSearch} placeholder="검색어를 입력하세요"></input>
                 <button onClick={onClickSearch}>검색</button>
             </div>
 
