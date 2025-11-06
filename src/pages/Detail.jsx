@@ -13,7 +13,6 @@ const Detail = () => {
         <div className="link">
             <Link to={"/"}>Home</Link>
         </div>
-        <hr/>
         
         <h1>{tool.name}</h1>
         <p>요금제 : {tool.price}</p>

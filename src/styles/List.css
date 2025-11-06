@@ -1,42 +1,182 @@
-.List {
-  display: flex;
-  flex-direction: column;
+.List{
+  display:flex;
+  flex-direction:column;
+  gap: 18px;
+  text-align:left;
+}
+
+.Searchbar{
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  padding: 14px;
+  border-radius: var(--radius);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.Searchbar > input{
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #0f1115;
+  border: 1px solid #2a2e37;
+  color: var(--text);
   text-align: left;
-  gap:10px;
 }
 
-.tool-item {
-  display: flex;
-  flex-direction: column;
+.Searchbar > input::placeholder{ color: #798295; }
+.Searchbar > input:focus{ border-color: #3b4250; box-shadow: 0 0 0 4px rgba(255,212,0,.07); }
+
+.Searchbar > button{
+  min-width: 110px;
+}
+
+.results{
+  display: grid;
+  grid-template-columns: repeat( auto-fill, minmax(280px, 1fr) );
+  gap: 16px;
+}
+
+.tool-item{
+  display:flex;
+  flex-direction:column;
+  gap: 12px;
+  padding: 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015)),
+    var(--card);
+  box-shadow: var(--shadow);
+  transform: translateY(0);
+  transition: transform .14s ease, box-shadow .14s ease, border-color .14s ease;
+}
+
+.tool-item:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0,0,0,.45);
+  border-color: #3a3f49;
+}
+
+.top{
+  display:flex;
+  flex-direction:column;
+  gap: 6px;
+}
+
+.top h2{
+  margin:0;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+
+.meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 6px;
+}
+
+.meta .badge{ font-weight: 600; }
+
+.bottom{
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.button{
+  margin-top: 6px;
+  display:flex;
   gap: 10px;
-  border: 3px solid #ddd;
-  padding: 10px;
-  border-radius: 8px;
+  flex-wrap: wrap;
 }
 
-.button {
-  display: flex;
-  gap: 20px;
-  font-size: 18px;
+.button > a,
+.button > .Detail{
+  composes: btn from global; /* (Vite CSS가 일반적으론 미지원, 무시돼도 무해) */
+}
+.button > a,
+.button > .Detail{
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #1d2026;
+}
+.button > a:hover,
+.button > .Detail:hover{ transform: translateY(-1px); }
+.button > .Detail{
+  background: linear-gradient(180deg, #ffe769, var(--primary));
+  color: var(--primary-ink);
+  border-color: #d2b800;
+  box-shadow: 0 8px 20px rgba(255,212,0,.22);
 }
 
-.explane {
-  display: flex;
-  gap: 20px;
-  font-size: 18px;
+.Searchbar > button{
+  position: relative;
+  overflow: hidden; 
+  cursor: pointer;
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: 1px solid #d2b800;  
+  background: linear-gradient(180deg, #ffe769, var(--primary));
+  color: var(--primary-ink);
+  font-weight: 800;
+  box-shadow: 0 8px 22px rgba(255,212,0,.22);
+  transition:
+    transform .12s ease,
+    box-shadow .12s ease,
+    border-color .12s ease,
+    filter .12s ease;
 }
 
-.Searchbar {
-    display: flex;
-    gap: 10px;
+.Searchbar > button:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(255,212,0,.30);
+  border-color: #e2c600;
+  filter: brightness(1.02);
 }
 
-.Searchbar > input {
-    flex: 1;
-    padding: 15px 0px;
-    text-align: center;
+.Searchbar > button:active{
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(255,212,0,.22);
 }
 
-.Searchbar > button {
-    cursor: pointer;
+.Searchbar > button:focus-visible{
+  outline: 0;
+  box-shadow:
+    0 0 0 3px rgba(255,212,0,.25),
+    0 10px 24px rgba(255,212,0,.30);
+  border-color: #f0d100;
+}
+
+.Searchbar > button::after{
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -120%;
+  width: 45%;
+  height: 220%;
+  background: linear-gradient(
+    100deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,.65) 50%,
+    rgba(255,255,255,0) 100%
+  );
+  transform: rotate(16deg);
+  transition: transform .6s ease, left .6s ease, opacity .3s ease;
+  opacity: .0;
+}
+.Searchbar > button:hover::after{
+  left: 140%;
+  opacity: .9; 
+}
+
+.Searchbar > button:disabled{
+  opacity:.6;
+  cursor:not-allowed;
+  transform:none;
+  box-shadow:none;
 }

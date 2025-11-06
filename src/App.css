@@ -1,5 +1,89 @@
+:root{
+  --bg: #0b0c10;
+  --surface: #121317;
+  --card: #181a20;
+  --text: #e9edf1;
+  --muted: #a7afbe;
+  --border: #2a2e37;
+  --primary: #ffd400; 
+  --primary-ink: #1c1c1c;
+  --ring: rgba(255, 212, 0, 0.45);
+  --shadow: 0 10px 24px rgba(0,0,0,0.35);
+  --radius: 14px;
+}
+
+*{ box-sizing: border-box; }
+html,body,#root{ height:100%; }
+body{
+  margin:0;
+  background: radial-gradient(1200px 800px at 10% -10%, #1b1e27 0%, #0b0c10 50%) fixed,
+              var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans KR", Arial;
+  line-height: 1.6;
+}
+a{ color: inherit; text-decoration: none; }
+img{ display:block; }
+button, input{
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
 .App{
-    display: flex;
-    flex-direction: column;
-    gap:10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-height: 100dvh;
+}
+
+.container{
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+.card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.btn{
+  display: inline-flex; align-items:center; justify-content:center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #1d2026;
+  transition: transform .12s ease, background .12s ease, border-color .12s ease, box-shadow .12s ease;
+  cursor: pointer;
+  user-select: none;
+}
+.btn:hover{ transform: translateY(-1px); border-color: #404450; }
+.btn:active{ transform: translateY(0); }
+
+.btn-primary{
+  background: linear-gradient(180deg, #ffe769, var(--primary));
+  color: var(--primary-ink);
+  border-color: #d2b800;
+  box-shadow: 0 8px 24px rgba(255,212,0,.25);
+}
+.btn-primary:hover{ box-shadow: 0 10px 28px rgba(255,212,0,.32); }
+
+.badge{
+  display:inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #20242c;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+:focus-visible{
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+  border-radius: 10px;
 }

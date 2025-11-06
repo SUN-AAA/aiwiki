@@ -1,6 +1,10 @@
-.Home {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    text-align: center;
+.Home{
+  display:flex;
+  flex-direction:column;
+  gap: 22px;
+  text-align: center;
+  padding-bottom: 48px;
+}
+.Home > *:not(.Header){
+  margin-top: 8px;
 }

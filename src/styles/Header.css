@@ -1,30 +1,52 @@
 .Header {
-    display: flex;
-    padding: 55px 0;
-}
-
-.Header > h1 {
-    position: absolute;
-    left: 50%;
-    top: 40px;
-    transform: translateX(-50%);
-    margin: 0;
-}
-
-.Header > a {
-    position: absolute;
-    top: 48px;
-    right: 30px; 
-    background-color: black;
-    color:white;
-    border-radius: 5px;
-    padding: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 76px;
+  backdrop-filter: blur(8px);
+  background: linear-gradient(180deg, rgba(18, 19, 23, 0.9), rgba(18, 19, 23, 0.65));
+  border-bottom: 1px solid var(--border);
 }
 
 .Header > img {
-    position:absolute;
-    top: 30px;
-    left: 30px;
-    width: 60px;
-    height: 60px;
+  position: absolute;
+  left: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #0f1115;
+  object-fit: cover;
+}
+
+.Header > h1 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  background: linear-gradient(180deg, #fff, #d8dde6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.Header > a {
+  position: absolute;
+  right: 24px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #ffe769, var(--primary));
+  color: var(--primary-ink);
+  font-weight: 700;
+  border: 1px solid #d2b800;
+  box-shadow: 0 6px 18px rgba(255, 212, 0, 0.25);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.Header > a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(255, 212, 0, 0.32);
 }
