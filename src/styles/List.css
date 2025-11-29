@@ -1,11 +1,11 @@
-.List{
-  display:flex;
-  flex-direction:column;
+.List {
+  display: flex;
+  flex-direction: column;
   gap: 18px;
-  text-align:left;
+  text-align: left;
 }
 
-.Searchbar{
+.Searchbar {
   width: 100%;
   margin: 0 auto;
   display: grid;
@@ -13,118 +13,137 @@
   gap: 12px;
   padding: 14px;
   border-radius: var(--radius);
-  background: rgba(255,255,255,0.03);
+  background: var(--card);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
 }
 
-.Searchbar > input{
+.Searchbar>input {
   width: 100%;
   padding: 14px 16px;
   border-radius: 12px;
-  background: #0f1115;
-  border: 1px solid #2a2e37;
+  background: #f9fafb;
+  border: 1px solid var(--border);
   color: var(--text);
   text-align: left;
 }
 
-.Searchbar > input::placeholder{ color: #798295; }
-.Searchbar > input:focus{ border-color: #3b4250; box-shadow: 0 0 0 4px rgba(255,212,0,.07); }
+.Searchbar>input::placeholder {
+  color: #9ca3af;
+}
 
-.Searchbar > button{
+.Searchbar>input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, .1);
+}
+
+.Searchbar>button {
   min-width: 110px;
 }
 
-.results{
+.results {
   display: grid;
-  grid-template-columns: repeat( auto-fill, minmax(280px, 1fr) );
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 16px;
 }
 
-.tool-item{
-  display:flex;
-  flex-direction:column;
+.tool-item {
+  display: flex;
+  flex-direction: column;
   gap: 12px;
   padding: 16px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  background:
-    linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015)),
-    var(--card);
+  background: var(--card);
   box-shadow: var(--shadow);
   transform: translateY(0);
   transition: transform .14s ease, box-shadow .14s ease, border-color .14s ease;
 }
 
-.tool-item:hover{
+.tool-item:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 30px rgba(0,0,0,.45);
-  border-color: #3a3f49;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
+  border-color: #d1d5db;
 }
 
-.top{
-  display:flex;
-  flex-direction:column;
+.top {
+  display: flex;
+  flex-direction: column;
   gap: 6px;
 }
 
-.top h2{
-  margin:0;
+.top h2 {
+  margin: 0;
   font-size: 18px;
   letter-spacing: 0.2px;
+  color: var(--text);
 }
 
-.meta{
-  display:flex;
-  flex-wrap:wrap;
+.meta {
+  display: flex;
+  flex-wrap: wrap;
   gap: 6px;
 }
 
-.meta .badge{ font-weight: 600; }
+.meta .badge {
+  font-weight: 600;
+}
 
-.bottom{
+.bottom {
   color: var(--muted);
   font-size: 14px;
 }
 
-.button{
+.button {
   margin-top: 6px;
-  display:flex;
+  display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
 
-.button > a,
-.button > .Detail{
-  composes: btn from global; /* (Vite CSS가 일반적으론 미지원, 무시돼도 무해) */
+.button>a,
+.button>.Detail {
+  composes: btn from global;
 }
-.button > a,
-.button > .Detail{
+
+.button>a,
+.button>.Detail {
   padding: 10px 12px;
   border-radius: 10px;
   border: 1px solid var(--border);
-  background: #1d2026;
-}
-.button > a:hover,
-.button > .Detail:hover{ transform: translateY(-1px); }
-.button > .Detail{
-  background: linear-gradient(180deg, #ffe769, var(--primary));
-  color: var(--primary-ink);
-  border-color: #d2b800;
-  box-shadow: 0 8px 20px rgba(255,212,0,.22);
+  background: #f9fafb;
+  transition: all .12s ease;
 }
 
-.Searchbar > button{
+.button>a:hover,
+.button>.Detail:hover {
+  transform: translateY(-1px);
+  background: #f3f4f6;
+}
+
+.button>.Detail {
+  background: linear-gradient(180deg, #3b82f6, var(--primary));
+  color: var(--primary-ink);
+  border-color: #1d4ed8;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, .22);
+}
+
+.button>.Detail:hover {
+  box-shadow: 0 6px 16px rgba(37, 99, 235, .32);
+  background: linear-gradient(180deg, #2563eb, #1d4ed8);
+}
+
+.Searchbar>button {
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
   cursor: pointer;
   padding: 12px 18px;
   border-radius: 12px;
-  border: 1px solid #d2b800;  
-  background: linear-gradient(180deg, #ffe769, var(--primary));
+  border: 1px solid #1d4ed8;
+  background: linear-gradient(180deg, #3b82f6, var(--primary));
   color: var(--primary-ink);
   font-weight: 800;
-  box-shadow: 0 8px 22px rgba(255,212,0,.22);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, .22);
   transition:
     transform .12s ease,
     box-shadow .12s ease,
@@ -132,51 +151,50 @@
     filter .12s ease;
 }
 
-.Searchbar > button:hover{
+.Searchbar>button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 12px 26px rgba(255,212,0,.30);
-  border-color: #e2c600;
-  filter: brightness(1.02);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, .30);
+  border-color: #1e40af;
+  filter: brightness(1.05);
 }
 
-.Searchbar > button:active{
+.Searchbar>button:active {
   transform: translateY(0);
-  box-shadow: 0 6px 16px rgba(255,212,0,.22);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, .22);
 }
 
-.Searchbar > button:focus-visible{
+.Searchbar>button:focus-visible {
   outline: 0;
   box-shadow:
-    0 0 0 3px rgba(255,212,0,.25),
-    0 10px 24px rgba(255,212,0,.30);
-  border-color: #f0d100;
+    0 0 0 3px rgba(37, 99, 235, .25),
+    0 6px 16px rgba(37, 99, 235, .30);
+  border-color: #2563eb;
 }
 
-.Searchbar > button::after{
+.Searchbar>button::after {
   content: "";
   position: absolute;
   top: -40%;
   left: -120%;
   width: 45%;
   height: 220%;
-  background: linear-gradient(
-    100deg,
-    rgba(255,255,255,0) 0%,
-    rgba(255,255,255,.65) 50%,
-    rgba(255,255,255,0) 100%
-  );
+  background: linear-gradient(100deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, .65) 50%,
+      rgba(255, 255, 255, 0) 100%);
   transform: rotate(16deg);
   transition: transform .6s ease, left .6s ease, opacity .3s ease;
   opacity: .0;
 }
-.Searchbar > button:hover::after{
+
+.Searchbar>button:hover::after {
   left: 140%;
-  opacity: .9; 
+  opacity: .9;
 }
 
-.Searchbar > button:disabled{
-  opacity:.6;
-  cursor:not-allowed;
-  transform:none;
-  box-shadow:none;
+.Searchbar>button:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
 }

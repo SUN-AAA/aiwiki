@@ -7,46 +7,46 @@
   justify-content: center;
   min-height: 76px;
   backdrop-filter: blur(8px);
-  background: linear-gradient(180deg, rgba(18, 19, 23, 0.9), rgba(18, 19, 23, 0.65));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
   border-bottom: 1px solid var(--border);
 }
 
-.Header > img {
+.Header>img {
   position: absolute;
   left: 24px;
   width: 48px;
   height: 48px;
   border-radius: 12px;
   border: 1px solid var(--border);
-  background: #0f1115;
+  background: #f9fafb;
   object-fit: cover;
 }
 
-.Header > h1 {
+.Header>h1 {
   margin: 0;
   font-weight: 800;
   font-size: 24px;
   letter-spacing: 0.5px;
-  background: linear-gradient(180deg, #fff, #d8dde6);
+  background: linear-gradient(180deg, #1a1a1a, #4b5563);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-.Header > a {
+.Header>a {
   position: absolute;
   right: 24px;
   padding: 10px 14px;
   border-radius: 10px;
-  background: linear-gradient(180deg, #ffe769, var(--primary));
+  background: linear-gradient(180deg, #3b82f6, var(--primary));
   color: var(--primary-ink);
   font-weight: 700;
-  border: 1px solid #d2b800;
-  box-shadow: 0 6px 18px rgba(255, 212, 0, 0.25);
+  border: 1px solid #1d4ed8;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
   transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 
-.Header > a:hover {
+.Header>a:hover {
   transform: translateY(-1px);
-  box-shadow: 0 10px 24px rgba(255, 212, 0, 0.32);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
 }
