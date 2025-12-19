@@ -5,36 +5,55 @@
 - Demo: [visit](https://www.aiwiki.kr)
 - Note: [visit](https://www.notion.so/2025-266a7b218ece80e49d6ae8c25ef883ee?source=copy_link)
 
-## 프로젝트 개요
+<br>
+
+## 📝프로젝트 개요
 
 - 목적: AI 툴들이 너무 많아 찾기 힘들다는 불편을 해결하기 위해 AI 백과사전 웹사이트를 제작해보았습니다.
 - 대상 사용자: AI 툴을 찾으려는 사용자
 
-## 주요 기능
+<br>
+
+## 💡주요 기능
 
 - AI 툴 리스트 조회
 - 키워드 검색
 - 툴 상세 페이지(설명/링크/가격/플랫폼 등)
 
-- (이미지 추가)
+<br>
 
+**home 화면**
 
-## 기술 스택 (skills & tools)
+<img src="home.png" width="700" alt="홈 화면" />
+<br>
+
+**검색 결과**
+
+<img src="검색.png" width="700" alt="검색 기능" />
+<br>
+
+**detail 페이지**
+
+<img src="detail.png" width="700" alt="상세 설명" />
+<br>
+
+## 🛠️기술 스택 (skills & tools)
 
 - Frontend: React
 - Build Tooling: Vite
 - Language: JavaScript / HTML / CSS
 - Package Manager: npm
 
+<br>
 
-## 요구사항 (Prerequisites)
+## 💻요구사항 (Prerequisites)
 
 - Node.js
 - npm
 
+<br>
 
-## 로컬 실행 방법 (How to run)
-
+## ⚙️로컬 실행 방법 (How to run)
 
 **1) 레포 클론**
 ```
