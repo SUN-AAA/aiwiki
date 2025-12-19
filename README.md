@@ -97,3 +97,8 @@ npm run dev
  ┣ 📜index.css
  ┗ 📜main.jsx
 ```
+
+<br>
+
+## 🔏라이센스(LICENSE)
+- MIT License
