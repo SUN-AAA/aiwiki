@@ -23,18 +23,18 @@
 <br>
 
 **home 화면**
+![home](home.png)
 
-<img src="home.png" width="700" alt="홈 화면" />
 <br>
 
 **검색 결과**
+![search](검색.png)
 
-<img src="검색.png" width="700" alt="검색 기능" />
 <br>
 
 **detail 페이지**
+![home](detail.png)
 
-<img src="detail.png" width="700" alt="상세 설명" />
 <br>
 
 ## 🛠️기술 스택 (skills & tools)
